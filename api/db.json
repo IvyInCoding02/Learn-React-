@@ -1,66 +1,19 @@
 {
-    "users" : [
-      {
-        "id": 1,
-        "name": "Arsen Iusupov",
-        "number": "+996557447807"
-      },
-
-      {
-        "id": 2,
-        "name": "Sam Smith",
-        "number": "+996773456789"
-      },
-
-      {
-        "id": 3,
-        "name": "Asel Azamatova",
-        "number": "+996555666777"
-      },
-
-      {
-        "id": 4,
-        "name": "Aibiike Abdysamatova",
-        "number": "+99650191103"
-      },
-
-      {
-        "id": 5,
-        "name": "Gulnazik Bakhramova",
-        "number": "+996557447905"
-      },
-
-      {
-        "id": 6,
-        "name": "Kenan Aliev",
-        "number": "+996557443215"
-      },
-
-      {
-        "id": 7,
-        "name": "David McCleary",
-        "number": "+996558969090"
-      },
-
-
-      {
-        "id": 8,
-        "name": "Kamila Yarkina",
-        "number": "+996789987"
-      },
-
-
-      {
-        "id": 9,
-        "name": "Maral Latipova",
-        "number": "+996774565656"
-      },
-
-      {
-        "id": 10,
-        "name": "Eliza Orozbekova",
-        "number": "+996557448765"
-      }
-      
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "Arsen Iusupov",
+      "number": "+996557447807"
+    },
+    {
+      "id": 2,
+      "name": "Sam Smith",
+      "number": "+996773456789"
+    },
+    {
+      "id": 3,
+      "name": "Asel Azamatova",
+      "number": "+996555666777"
+    }
+  ]
+}
