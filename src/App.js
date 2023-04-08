@@ -4,13 +4,16 @@ import { useEffect, useState } from 'react';
 import Input from './input/Input';
 
 const getUsers = () => {
-   return axios.get("http://localhost:3001/users")
-}
+   return axios.get("http://localhost:3001/users");
+};
 
 const createUser = (user) => {
-  return axios.post("http://localhost:3001/users", user)
-}
+  return axios.post("http://localhost:3001/users", user);
+};
 
+const deleteUserById = (id) => {
+  return axios.delete(`http://localhost:3001/users/${id}`);
+};
 
 function App(props) {
   const [users, setUsers] = useState([]);
@@ -46,7 +49,15 @@ function App(props) {
     getUsers().then((data) => setUsers(data.data))
   });
 };
-  
+
+const removeUser = (user) => {
+  console.log(user)
+  deleteUserById(user).then(() =>{
+    getUsers().then((data) => {
+      setUsers(data.data)
+    })
+  })
+}
   return (
     <div className="App">
       <div className="inputForm">
@@ -66,13 +77,13 @@ function App(props) {
         onChange={event => setAddNumber(event.target.value)}/>
         <input className="submitInput" type="submit" value="Add User"/>
       </form>
-
     </div>
     {users.map((user) => {
       return (
       <div className="user" key={user.id}>
         <h1 className="user-name">{user.name}</h1>
         <p className="user-number">{user.number}</p>
+        <button className="submitInput" onClick={() => removeUser(user.id)}>Remove</button>
        </div>
       )})
       }

@@ -1,19 +1,9 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Arsen Iusupov",
-      "number": "+996557447807"
-    },
-    {
-      "id": 2,
-      "name": "Sam Smith",
-      "number": "+996773456789"
-    },
-    {
-      "id": 3,
-      "name": "Asel Azamatova",
-      "number": "+996555666777"
+      "name": "Aibiike Abdysamatova",
+      "number": "0501191103",
+      "id": 2
     }
   ]
 }
